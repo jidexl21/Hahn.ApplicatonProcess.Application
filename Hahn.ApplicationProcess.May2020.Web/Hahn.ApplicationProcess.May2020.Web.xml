@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hahn.ApplicationProcess.May2020.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Hahn.ApplicationProcess.May2020.Web.Controllers.ApplicantController">
+            <summary>
+            Applicant  endpoints
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Controllers.ApplicantController.#ctor(Hahn.ApplicationProcess.May2020.Domain.Services.IApplicantService)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Controllers.ApplicantController.Get">
+            <summary>
+             Returns list of Applicants
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Controllers.ApplicantController.Get(System.Int32)">
+            <summary>
+            Gets an Applicant by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Controllers.ApplicantController.Post(Hahn.ApplicationProcess.May2020.Core.Applicant)">
+            <summary>
+            Create a new Applicant
+            </summary>
+            <remarks>
+            Sample Request:
+            
+                
+                {
+                "name": "Ferdinand",
+                "familyName": "Magellan",
+                "address": "Villa Real, Sabrosa",
+                "countryOfOrigin": "Portugal",
+                "emailAddress": "not@yet.made",
+                "age": 34,
+                "hired": false
+                }
+            </remarks>
+            <param name="value"></param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Controllers.ApplicantController.Put(System.Int32,Hahn.ApplicationProcess.May2020.Core.Applicant)">
+            <summary>
+            Update an applicant
+            </summary>
+            <remarks>
+            Sample Request:
+            
+                
+                {
+                "id": 1,
+                "name": "Ferdinand",
+                "familyName": "Magellan",
+                "address": "Villa Real, Sabrosa",
+                "countryOfOrigin": "Portugal",
+                "emailAddress": "newemail@sabrosa.com",
+                "age": 34,
+                "hired": false
+                }
+            </remarks>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Controllers.ApplicantController.Delete(System.Int32)">
+            <summary>
+            Delete an applicant
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Utility.SimpleInjectorContainerExtensions.RegisterAllDependencies(SimpleInjector.Container,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers all dependencies with simple injector (This will allow for dependency verification)
+            </summary>
+            <param name="container"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Utility.SimpleInjectorContainerExtensions.RegisterSpecial(SimpleInjector.Container,System.Reflection.Assembly,System.String)">
+            <summary>
+            Register a group of services from the specified assembly
+            </summary>
+            <param name="container"></param>
+            <param name="repositoryAssembly"></param>
+            <param name="endString"></param>
+        </member>
+        <member name="T:Hahn.ApplicationProcess.May2020.Web.Utility.ValidatorActionFilter">
+            <summary>
+            Handles Controller input Validation
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Utility.ValidatorActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.May2020.Web.Utility.ValidatorActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:Hahn.ApplicationProcess.Application.May2020.Web.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.Application.May2020.Web.Program.Main(System.String[])">
+            <summary>
+            Program entry point
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.Application.May2020.Web.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Host configuration specs
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hahn.ApplicationProcess.Application.May2020.Web.Startup">
+            <summary>
+            Web Application Initialization Class
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.Application.May2020.Web.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup class entry point
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.Application.May2020.Web.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.Application.May2020.Web.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.Application.May2020.Web.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
