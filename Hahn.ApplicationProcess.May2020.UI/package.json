@@ -1,9 +1,0 @@
-{
-  "name": "hahn.application-process.may2020.ui",
-  "version": "0.0.0",
-  "description": "Hahn.ApplicationProcess.May2020.UI",
-  "main": "server.js",
-  "author": {
-    "name": ""
-  }
-}
